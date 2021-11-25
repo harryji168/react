@@ -1,0 +1,33 @@
+<% if @product.errors.any? %>
+  <ul>
+    <% @product.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+<%= form_with model:@product do |form|%>
+<div>
+    <%= form.label :title%>
+    <%= form.text_field :title%>
+</div>
+<div>
+    <%= form.label :description%>
+    <%= form.text_area :description%>
+</div>
+<div>
+    <%= form.label :price%>
+    <%= form.text_field :price%>
+</div>
+<div class="form-group">
+    <%= form.collection_check_boxes :tag_ids, Tag.order(name: :asc), :id, :name do |b| %>
+        <div class="tag-wrapper">
+        <%= b.check_box %>
+        <%= b.text.humanize %>
+        </div>
+    <% end %>
+</div>
+<div>
+    <%= form.submit%>
+</div>
+
+<% end %>
