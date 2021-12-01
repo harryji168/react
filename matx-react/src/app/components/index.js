@@ -1,5 +1,6 @@
 //export { default as Breadcrumb } from './Breadcrumb/Breadcrumb'
-export { default as Breadcrumb } from './react-breadcrumbs'
+import Breadcrumb from 'use-react-router-breadcrumbs';
+//export { default as Breadcrumb } from './react-breadcrumbs/dist/'
 export { default as MatxDivider } from './MatxDivider/MatxDivider'
 export { default as MatxMenu } from './MatxMenu/MatxMenu'
 export { default as MatxToolbarMenu } from './MatxToolbarMenu/MatxToolbarMenu'
