@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, Breadcrumbs, Hidden } from '@material-ui/core'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from ''
 
 const Breadcrumb = ({ routeSegments }) => {
     return (
