@@ -1,0 +1,17 @@
+<h2>Hi, <%= @product_owner.full_name %></h2>
+
+<p>
+   You created a new product: <br />
+   <span style="font-weight: 600;"> <%= @product.title %></span>
+ </p>
+<p>$<%= @product.price %><p>
+ <p>
+   <%= @product.description %>
+ </p>
+
+ <%= link_to("Click here to view your product", product_url(@product)) %>
+
+ <p>
+   Cheers, <br />
+   Amazon Team
+ </p>

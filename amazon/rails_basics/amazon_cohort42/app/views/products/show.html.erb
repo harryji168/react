@@ -1,0 +1,93 @@
+<h1><%= @product.title%> </h1>
+<p><%= @product.description%></p>
+<small>$<%= format("%.2f",@product.price)%></small>
+<div>
+
+<small>
+    <%= link_to("Delete", product_path(@product.id) ,method: :delete, data:{confirm:"Are you sure?"}) %>
+</small>
+<small>
+    <%= link_to("Edit", edit_product_path(@product.id)) %>
+</small>
+<h5> Created by <%= @product.user.full_name%>
+</h5>
+
+<% @product.tags.each do |tag|%>
+<%= link_to tag.name, products_path(tag: tag.id), class: "badge badge-pill badge-primary" %>
+<% end %>
+
+<% if @favourite%>
+  <%= link_to @favourite.is_favourite ? "Cancel Favourite" : "Cancel Unavourite", favourite_path(@favourite), class:"btn btn-light ", method: :delete%>
+<% else%>
+  <%= form_with(url: product_favourites_path(@product), local: true) do |f| %>
+  <input type="hidden" name="is_favourite" value="true">
+  <%= f.submit "Favourite", class:"btn btn-info" %>
+  <% end %>
+  <%= form_with(url: product_favourites_path(@product), local: true) do |f| %>
+  <input type="hidden" name="is_favourite" value="false">
+  <%= f.submit "Unfavourite", class:"btn btn-dark" %>
+  <% end %>
+<% end %>
+</div> 
+<ul>
+    <% @reviews.each do |review| %>
+        <li>
+            <%= review.body %>
+            <%= review.rating %>
+            <small>
+            <%= link_to("Delete", product_review_path(@product.id, review) ,method: :delete, data:{confirm:"Are you sure?"}) %>
+            </small>
+            <small>
+            <% like = review.likes.find_by(user: current_user) %>
+            <% if like.present? %>
+            <%= link_to "Unlike", like_path(like), method: :delete %>
+            <% else %>
+            <%= link_to "Like", product_review_likes_path(@product, review), method: :post %>
+            <% end%>
+            </small>
+            <h5> Reviewed by <%= review.user.full_name%>
+            </h5>
+            |
+            <% vote = review.votes.find_by(user: current_user) %>
+            <% if vote%>
+                <%= link_to vote.is_vote ? "Cancel Vote Up" : "Cancel Vote Down", vote_path(vote), class:"btn btn-light ", method: :delete%>
+            <% elsif can?(:vote, review)%>
+                <%= form_with(url: product_review_votes_path(@product,review), local: true) do |f| %>
+                <input type="hidden" name="is_vote" value="true">
+                <%= f.submit "Vote Up", class:"btn btn-info" %>
+                <% end %>
+                <%= form_with(url: product_review_votes_path(@product,review), local: true) do |f| %>
+                <input type="hidden" name="is_vote" value="false">
+                <%= f.submit "Vote Down", class:"btn btn-dark" %>
+                <% end %>
+            <% end %>
+            |      
+            <small>
+                (<%= pluralize(review.votes.where(is_vote: true).count, "vote up") %>)
+            </small>
+            |      
+            <small>
+                (<%= pluralize(review.votes.where(is_vote: false).count, "vote down") %>)
+            </small>
+        </li>
+    <% end %>
+</ul>
+
+<ul>
+<% if @review.errors.any? %>
+    <% @review.errors.full_messages.each do |msg|%>
+    <li><%= msg %></li>
+    <% end %>
+<% end %>
+</ul>
+<%= form_with(model: [@product, @review]) do |form|%>
+<div>
+    <%= form.label :body%>
+    <%= form.text_area :body%>
+</div>
+<div>
+    <%= form.label :rating%>
+    <%= form.text_field :rating%>
+</div>
+<%= form.submit %>
+<% end %>

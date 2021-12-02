@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script>
+        // React.createElement takes 3 arguments and returns a React Element
+        // 1. the React Element you want to render on page;
+        // 2. the props of this React Element;
+        // 3. the children of this React Element;
+        // const hello = React.createElement("div",null, "Hello World");
+        // const hello = React.createElement("div",{ style:{height:"20px",backgroundColor:"red"}, className: "test" }, "Hello World");
+
+        function HelloWorld(props) {
+            return React.createElement("p",{className:"pTag"},`Hello, ${props.name} world!`);
+        }
+
+
+        // ReactDOM.render takes 2 arguments
+        // 1. the React Element you want to render on the page;
+        // 2. the DOM node => the element you want to append to;
+        // ReactDOM.render(hello, document.querySelector("#root"));
+        ReactDOM.render(HelloWorld({name:"Mao"}), document.querySelector("#root"));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<h1>Contact Us</h1>
+
+<%= form_with url: "/contact_submit" do |form| %>
+
+  <%= form.label :full_name, "Full Name:" %>
+  <%= form.text_field :full_name %>
+  <%= form.submit "Submit" %>
+
+<% end %>
