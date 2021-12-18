@@ -1,0 +1,7 @@
+<h1>
+Tags Index Page
+</h1>
+
+<% @tags.each do |tag|%>
+<%= link_to tag.name, products_path(tag: tag.id), class: "badge badge-pill badge-primary" %>
+<% end %>
