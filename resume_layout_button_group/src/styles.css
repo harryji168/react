@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center; 
+}
+html, body, .Login-component {
+  height: 100vh;
+  margin: 0;
+}
+
+.Login-component {
+  /* background: url(./HarryJi_Resume12_react_Page_1.png) no-repeat center center fixed;
+background-size: cover; */
+
+ /* The image used */
+
+ /* Full height */
+ width: '1545px';
+ height: '2000px';
+ background-image: url(./HarryJi_Resume12_react_Page.png);
+
+ /* Center and scale the image nicely */
+ /* background-position: center; */
+ background-position-x: 0px;
+ background-position-y: 0px;
+ background-repeat: no-repeat;
+ /* background-size: cover; */
+}
+
+ 
+
+.skills-component {
+  top: '900px';
+  width: '430px';
+
+}
