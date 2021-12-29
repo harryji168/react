@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "nx-project": "apps/nx-project",
+    "nx-project-e2e": "apps/nx-project-e2e"
+  }
+}
