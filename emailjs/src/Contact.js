@@ -6,10 +6,19 @@ const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = (data, r) => {
         alert(`Thank you for your message from ${data.email}`);
-        const templateId = 'template_l7s9qxd';
-        const serviceID = 'my_gmail';
+        const templateId = 'template_yk1pgyy';
+        const serviceID = 'service_x2e9al5';
         sendFeedback(serviceID, templateId, { from_name: data.name, message_html: data.comment, reply_to: data.email })
         r.target.reset();
+    }
+    const sendFeedback = (serviceID, templateId, variables) => {
+        window.emailjs.send(
+            serviceID, templateId,
+            variables
+        ).then(res => {
+            console.log('Email successfully sent!')
+        })
+            .catch(err => console.error('There has been an error.  Here some thoughts on the error that occured:', err))
     }
 
 
