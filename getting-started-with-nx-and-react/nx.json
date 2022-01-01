@@ -1,0 +1,33 @@
+{
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "getting-started-with-nx-and-react",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "first-project": {
+      "tags": []
+    },
+    "first-project-e2e": {
+      "tags": [],
+      "implicitDependencies": ["first-project"]
+    },
+    "api": {
+      "tags": []
+    }
+  }
+}
