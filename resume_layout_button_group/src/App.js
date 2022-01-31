@@ -1,6 +1,8 @@
 import { Button } from "@material-ui/core";
 import { ButtonGroup } from "./components/button-group/button-group";
 import "./styles.css";
+import React from "react";
+import {ChatWidget} from "@papercups-io/chat-widget";
 
 export default function App() {
   return (
