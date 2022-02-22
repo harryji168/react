@@ -1,0 +1,20 @@
+<h1>Bill Splitter</h1>
+<%= form_with url: bill_path, method: 'get' do |form|%>
+  <div>
+    <%= form.label :amount, "Amount:" %>
+    <%= form.text_field :amount %>
+  </div>
+  <div>
+    <%= form.label :tax, "Tax:" %>
+    <%= form.text_field :tax %>
+  </div>
+  <div>
+     <%= form.label :tip, "Tip:" %>
+    <%= form.text_field :tip %>
+  </div>
+  <div>
+    <%= form.label :number_of_people, "Number of people:" %>
+    <%= form.text_field :number_of_people %>
+  </div>
+  <%= form.submit "Submit" %>
+<% end %>

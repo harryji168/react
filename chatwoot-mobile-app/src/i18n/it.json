@@ -1,0 +1,147 @@
+{
+  "WELCOME": "Benvenuto",
+  "COMMON": {
+    "ERROR": "Errore",
+    "ERROR_TITLE": "Errore inatteso",
+    "REPORT_MESSAGE": "Lo abbiamo segnalato alla nostra squadra! Chiudere l'app e ricominciare!",
+    "CLOSE": "Chiudi"
+  },
+  "FOOTER": {
+    "HOME": "Home",
+    "CONVERSATION": "Conversazioni",
+    "NOTIFICATION": "Notifiche",
+    "SETTINGS": "Impostazioni"
+  },
+  "CONFIGURE_URL": {
+    "ENTER_URL": "URL Di Installazione",
+    "DESCRIPTION": "If you are using a self-hosted Chatwoot installation, input your server URL. Otherwise, use app.chatwoot.com.",
+    "URL_ERROR": "Inserisci un URL valido",
+    "CONNECT": "Connetti",
+    "CHANGE_LANGUAGE": "Cambia lingua",
+    "ERROR": "Url installazione non valido"
+  },
+  "LOGIN": {
+    "TITLE": "Login to your account",
+    "DESCRIPTION": "You are connected to {{baseUrl}}. Login with your email address and password.",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "EMAIL_ERROR": "Inserisci una email valida",
+    "PASSWORD_ERROR": "Inserisci una password valida",
+    "LOGIN": "Accedi",
+    "FORGOT_PASSWORD": "Hai dimenticato la password?",
+    "RESET_HERE": "Reimposta qui",
+    "NO_ACCOUNT": "Non hai un account?",
+    "CREATE_ACCOUNT": "Crea un nuovo account",
+    "SETTINGS": "Impostazioni",
+    "CHANGE_LANGUAGE": "Cambia lingua",
+    "TERMS": "Termini E Condizioni",
+    "CHANGE_URL": "Cambia URL"
+  },
+  "FORGOT_PASSWORD": {
+    "EMAIL": "Inserisci il tuo indirizzo e-mail",
+    "EMAIL_ERROR": "Inserisci un'e-mail valida",
+    "RESET_HERE": "Reimposta password",
+    "HEADER_TITLE": "Reimposta password",
+    "TITLE": "Hai dimenticato la password?",
+    "SUB_TITLE": "Non preoccuparti! Ti copriamo le spalle"
+  },
+  "CONVERSATION": {
+    "DEFAULT_HEADER_TITLE": "Conversazioni",
+    "MINE": "Mio",
+    "UN_ASSIGNED": "Non Assegnato",
+    "ALL": "Tutti",
+    "EMPTY": "Non ci sono conversazioni attive in questo gruppo.",
+    "PICTURE_CONTENT": "Messaggio con foto",
+    "ATTACHMENT_CONTENT": "File Allegato",
+    "DOWNLOAD": "Download",
+    "TODAY": "Oggi",
+    "YESTERDAY": "Ieri",
+    "TYPE_MESSAGE": "Digita messaggio",
+    "TYPING": "digitazione",
+    "ALL_CONVERSATION_LOADED": "Tutte le conversazioni sono caricate",
+    "RESOLVE": "Risolvi la conversazione",
+    "RE_OPEN": "Riaprire la conversazione",
+    "ASSIGN": "Assign conversation",
+    "FILE_SIZE_LIMIT": "File exceeds the 5MB attachment limit",
+    "CANCEL": "Annulla",
+    "PRIVATE_MSG_INPUT": "This will be visible only to Agents",
+    "UN_ASSIGN": "Unassign conversation"
+  },
+  "FILTER": {
+    "HEADER_TITLE": "Filtro Conversazione",
+    "CHOOSE_INBOX": "Scegli Inbox",
+    "CHOOSE_STATUS": "Stato Della Conversazione",
+    "OPEN": "Apri",
+    "RESOLVED": "Risolto",
+    "BOT": "Bot",
+    "SUBMIT": "Invia"
+  },
+  "SETTINGS": {
+    "HEADER_TITLE": "Impostazioni",
+    "AVAILABILITY": "Disponibilità",
+    "NOTIFICATION": "Preferenze Notifiche",
+    "HELP": "Documenti Di Aiuto",
+    "CHAT_WITH_US": "Chat with Us",
+    "LOG_OUT": "Esci",
+    "SWITCH_ACCOUNT": "Cambia Account",
+    "CHANGE_LANGUAGE": "Cambia lingua",
+    "SUBMIT": "Invia"
+  },
+  "NOTIFICATION": {
+    "HEADER_TITLE": "Notifiche",
+    "EMPTY": "Ancora nessuna notifica.",
+    "EMPTY_MORE_TEXT": "Una volta che inizierai a ricevere le notifiche, appariranno qui.",
+    "ALL_NOTIFICATION_LOADED": "Tutte le notifiche caricate",
+    "MARK_ALL": "Segna tutto come letto",
+    "CANCEL": "Annulla"
+  },
+  "AVAILABILITY": {
+    "ONLINE": "Online",
+    "BUSY": "Occupato",
+    "OFFLINE": "Offline"
+  },
+  "NOTIFICATION_PREFERENCE": {
+    "TITLE": "Preferenze Notifiche",
+    "EMAIL": "Email",
+    "PUSH": "Push",
+    "CONVERSATION_CREATE_PUSH": "Invia notifiche push quando viene creata una nuova conversazione",
+    "CONVERSATION_ASSIGNEE_PUSH": "Invia notifiche push quando una conversazione è assegnata a me",
+    "CONVERSATION_ASSIGNED_NEW_MESSAGE_PUSH": "Invia notifiche push quando viene creato un nuovo messaggio in una conversazione assegnata",
+    "CONVERSATION_CREATE_EMAIL": "Invia notifiche email quando viene creata una nuova conversazione",
+    "CONVERSATION_ASSIGNEE_EMAIL": "Invia notifiche email quando una conversazione mi viene assegnata",
+    "CONVERSATION_ASSIGNED_NEW_MESSAGE_EMAIL": "Invia notifiche via e-mail quando viene creato un nuovo messaggio in una conversazione assegnata"
+  },
+  "CONVERSATION_DETAILS": {
+    "BROWSER": "Browser",
+    "OPERATING_SYSTEM": "Sistema Operativo",
+    "INITIATED_AT": "Avviato il",
+    "INITIATED_FROM": "Avviato da"
+  },
+  "CONVERSATION_ACTION": {
+    "TITLE": "Actions"
+  },
+  "AGENT": {
+    "TITLE": "Select Agent"
+  },
+  "ERRORS": {
+    "COMMON_ERROR": "Impossibile connettersi al Woot Server, riprova più tardi",
+    "OfFLINE": "Devi connetterti al Wi-Fi o a una rete cellulare per tornare online",
+    "CANNOT_FETCH": "Si è verificato un errore nel recupero delle informazioni, si prega di riprovare",
+    "AUTH": "Nome utente / Password non corretta. Si prega di riprovare",
+    "NO_ACCOUNTS_MESSAGE": "Non hai accesso ad alcun account chatwood"
+  },
+  "SUCCESS": {
+    "AUTH": "Accesso Riuscito"
+  },
+  "SERVER_UPGRADE": {
+    "TITLE": "Server upgrade required",
+    "WARNING_FOR_AGENT": "It seems like you are using unsupported Chatwoot server for your mobile app. Please contact your admin to upgrade your Chatwoot server.",
+    "WARNING_FOR_ADMIN": "It seems like you are using unsupported Chatwoot server for your mobile app. Upgrading to server version %{minimumVersion} or later is required."
+  },
+  "EXIT": {
+    "TITLE": "Esci",
+    "SUBTITLE": "Sei sicuro di voler uscire?",
+    "CANCEL": "Annulla",
+    "OK": "Ok"
+  }
+}

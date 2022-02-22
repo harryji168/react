@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+
+#intro {
+  margin-top: 14px;
+  width:100vw;
+  height:100vh;
+  background: url("./images/background_image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #000;
+}
+#intro .overlay, #pay-wrapper .overlay {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  /* FF3.6+ */ 
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  /* W3C */
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
+  /* IE6-9 */
+  /* position: relative;
+  bottom: 9%; */
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+#menu-items{
+  background-color:black !important;
+  height: 60% !important;
+}
+.menu-text{
+  font-size: large;
+  color: white !important;
+}
+
+img{
+  margin:6%;
+  height: 60% !important;
+}
+.active.item.menu-text{
+  background-color:grey !important;
+}
+
+.ui.header{
+  color: white !important;
+}
+
+.search-intro{
+  margin:5%
+}
+
+
+.visible.content, .hidden.content{
+  /* background-color: white !important; */
+  color:white !important
+}
+
+.wel{
+  margin-top: 8% !important;
+}
+
+.search-sec{
+  margin:5% 5% 0% 5%;
+}
+
+
+
+#pay-wrapper {
+  margin-top: 14px;
+  width:100vw;
+  height:100vh;
+  background: url("https://cdn.wallpapersafari.com/22/50/TM5uq2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #000;
+}
+
+#man-details,#vin-details,#all-man-details{
+  margin-bottom: 5%;
+}
+
+#error{
+  color: red;
+  margin-bottom: 4%
+}
+
+.or{
+  margin-top: 3%;
+}
+
